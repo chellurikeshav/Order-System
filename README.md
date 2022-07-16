@@ -64,4 +64,4 @@ Project is created with:
       ```
 5. Now, You can perform all the basic operations in order system using API's.
 
-(Note :- More functionality not yet added.But mentioned in repository.)
+(Note :- More functionality not yet added.But mentioned in repository.[More Features](https://github.com/chellurikeshav/Order-System/blob/main/more_featues(yet%20to%20add).pdf)) 
