@@ -12,7 +12,7 @@ The goal of this project is to design a application for a taking orders from a r
 ## Project Implementation Details -
 
 1. Database Used - MySQL
-2. Created API for all 4 basic CRUD operations and added basic functionality
+2. Created API for all 4 basic CRUD operations for every table in database and added basic functionality.
 
 ## --------------------------------------------------------------------------------------------------------
 
