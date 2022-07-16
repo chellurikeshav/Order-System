@@ -64,4 +64,4 @@ Project is created with:
       ```
 5. Now, You can perform all the basic operations in order system using API's.
 
-(Note :- More functionality are not yet added.But mentioned in repository.)
+(Note :- More functionality not yet added.But mentioned in repository.)
