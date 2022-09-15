@@ -153,8 +153,8 @@ class OrderItemsViewset(viewsets.ModelViewSet):
             if count <= cuisine.remaining_quantity:
                 cuisine.remaining_quantity = cuisine.remaining_quantity - count
                 cuisine.save()
-
-                new_order_item = OrderItems(order_id = order_instance,menu_id = menu_instance)
+                
+                new_order_item = OrderItems(order_id = order_instance,menu_id = menu_instance,quantity = count)
                 new_order_item.save()
                 message[ordered].append(f'{count} {menu_instance.item_name} Ordered')
             else:
@@ -201,8 +201,6 @@ class BillingViewset(viewsets.ModelViewSet):
 
         items = OrderItems.objects.filter(order_id = order_instance)
         serializer = OrderItemsSerializer(items,many = True).data
-        
-        
 
         for item in serializer:
             new_item = {}

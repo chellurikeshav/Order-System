@@ -38,7 +38,7 @@ class OrderItems(models.Model):
     order_items_id = models.AutoField(primary_key=True)
     order_id = models.ForeignKey(Orders,db_column="order_id",on_delete=models.CASCADE)
     menu_id = models.ForeignKey(Menu,db_column="menu_id",on_delete=models.CASCADE)
-    quantity = models.IntegerField(default=0)
+    quantity = models.IntegerField()
 
 class Billing(models.Model):
     billing_id = models.IntegerField(primary_key=True)
